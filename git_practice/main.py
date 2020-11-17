@@ -1,7 +1,22 @@
 
-from add_lists import add_lists
+import list_ops as lo
+import dict_ops as do
 
 if __name__ == "__main__":
-    result = add_lists(['wel', 't', 'r'], ['come', 'o', 'os'])
-    print(result)
->>>>>>> 17c06328f85c560a30b94c56c1feb485c3758b22
+    foo = [1,2,3]
+    bar = [4,5,6]
+    print(f"foo: {foo}, bar: {bar}")
+    print("foo+bar=", lo.add(foo, bar))
+    print("foo-bar=", lo.subtract(foo, bar))
+    print("foo*bar=", lo.multiply(foo, bar))
+    print("foo/bar=", lo.divide(foo, bar))
+    
+    foo = {"Java": 79, "Cpp": 45, "Python": 99}
+    bar = {"Java": 36, "Python": 56, "Ruby": 63}
+    print(f"foo: {foo}, bar: {bar}")
+    print("foo+bar=", do.add(foo, bar))
+    print("foo-bar=", do.subtract(foo, bar))
+    print("foo*bar=", do.multiply(foo, bar))
+    print("foo/bar=", do.divide(foo, bar))
+
+
